@@ -1,0 +1,59 @@
+.featuredKontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.featuredCard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+  padding: 20px;
+}
+
+hr {
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+}
+
+.featured {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  min-height: 80vh;
+}
+
+.featuredContent {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.featuredNotification {
+  flex: 1;
+}
+
+.notification {
+  padding: 20px;
+  background-color: #683e12;
+  margin: 20px;
+  border-radius: 10px;
+  min-height: 60vh;
+
+}
+
+@media only screen and (max-width: 400px) {
+  .featured {
+    flex-direction: column;
+  }
+}

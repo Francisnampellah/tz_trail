@@ -7,13 +7,14 @@ import { CardActionArea } from "@mui/material";
 import Image from "../Assets/hero.jpg";
 
 export default function ActionAreaCard({ detail }) {
+  console.log(detail.image_url);
   return (
     <Card sx={{ maxWidth: 345 }}>
       <CardActionArea>
         <CardMedia
           component="img"
           height="140"
-          image={Image}
+          image={"https://api.tanzaniatrails.co.tz/" + detail.image_url}
           alt="green iguana"
         />
         <CardContent>
