@@ -6,7 +6,7 @@ function Portfolio() {
   const arryData = [1, 23, 45, 67];
   return (
     <section className="portfolio-area section-gap" id="portfolio">
-      <div className="container">
+      <div className="container ">
         <div className="row d-flex justify-content-center">
           <div className="menu-content col-lg-10">
             <div className="title text-center">
@@ -15,7 +15,6 @@ function Portfolio() {
             </div>
           </div>
         </div>
-
         <div className="popularProduct">
           {arryData.map((each) => (
             <div class="card KardCostume">
@@ -31,7 +30,7 @@ function Portfolio() {
           </div>
           ))}
         </div>
-        
+
         <div className="KardCostumeViewAll">
           <span>View All</span>
         </div>

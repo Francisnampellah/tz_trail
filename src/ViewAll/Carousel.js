@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import Carousel from "react-bootstrap/Carousel";
 import Card from "react-bootstrap/Card";
+import ScrollAnimation from "react-animate-on-scroll";
 import KardComponent from "../component/KardComponent";
 
 const CarouselComponent = () => {
@@ -22,19 +23,20 @@ const CarouselComponent = () => {
     }
   }
 
-  //   const ItemRender = () =>{
-  //     for (let i = 0; i < DataArray.length; i += 1) {
-  //         chunkedData.push(DataArray.slice(i, i + 1));
-  //   }
 
   const ArryData = [1, 2, 3];
   return (
-    <section className="portfolio-area section-gap" id="portfolio">
-      <div className="container">
+    <ScrollAnimation
+      animateIn={"fadeIn"}
+      duration={3}
+      className=""
+      id="portfolio"
+    >
+      <div className="container popularProductKontainer">
         <div className="row d-flex justify-content-center">
           <div className="menu-content col-lg-10">
             <div className="title text-center">
-              <h1 className="mb-10">Popular Product</h1>
+              <h1 className="mb-10 text-black text-3xl font-medium leading-tight p-inner">Popular Product</h1>
               <p>Explore Tanzania from Arusha to Serengeti</p>
             </div>
           </div>
@@ -46,6 +48,8 @@ const CarouselComponent = () => {
           interval={null}
           fade={true}
           slide={true}
+          indicators={true}
+          controls={true}
         >
           {chunkedData.map((each) => (
             <Carousel.Item>
@@ -61,7 +65,7 @@ const CarouselComponent = () => {
           <span>View All</span>
         </div>
       </div>
-    </section>
+    </ScrollAnimation>
   );
 };
 
