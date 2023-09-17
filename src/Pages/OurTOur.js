@@ -13,6 +13,7 @@ import ClipLoader from "react-spinners/ClipLoader";
 import GetRequest from "../DataProcessing/GetRequest.js";
 import TourFilterElement from "./TourFilterElement.js";
 import { GetFilter } from "../DataProcessing/GetRequest";
+import ScrollAnimation from "react-animate-on-scroll";
 
 import { sortOptions } from "../DataProcessing/Filters.js";
 
@@ -34,7 +35,7 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-export default function Example({setTourId}) {
+export default function Example({ setTourId }) {
   const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false);
   const [filteredInfo, setFilteredInfo] = useState();
   const [filteredPackage, setFilteredPackage] = useState();
@@ -94,11 +95,13 @@ export default function Example({setTourId}) {
   }
 
   return (
-    <div
+    <ScrollAnimation
+      animateIn="fadeIn"
+      duration={3}
       className="bg-white"
       style={{ minHeight: "80vh", margin: "20px", borderRadius: "10px" }}
     >
-      <div >
+      <div>
         {/* Mobile filter dialog */}
         <Transition.Root show={mobileFiltersOpen} as={Fragment}>
           <Dialog
@@ -439,12 +442,15 @@ export default function Example({setTourId}) {
 
               {/* Product grid */}
               <div className="lg:col-span-3">
-                <TourFilterElement setId={setTourId} data={filteredPackage?.data} />
+                <TourFilterElement
+                  setId={setTourId}
+                  data={filteredPackage?.data}
+                />
               </div>
             </div>
           </section>
         </main>
       </div>
-    </div>
+    </ScrollAnimation>
   );
 }

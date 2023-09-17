@@ -25,10 +25,7 @@ const TourCarousel = ({ data }) => {
     Swal.fire({
       imageUrl: url,
       imageAlt: "A tall image",
-      //   title: "Custom Image Alert",
-      //   html: `<img src=${url} alt="Image" style="max-width: 100%;borderRadius:'10px'">`,
-      //   showCloseButton: true,
-      //   showConfirmButton: false,
+        title: "Custom Image Alert",
     });
   };
 

@@ -5,6 +5,13 @@ import BookingForm from "../component/BookingForm";
 import { Link, useLocation, useParams } from "react-router-dom";
 import ClipLoader from "react-spinners/ClipLoader";
 import TourCarousel from "../component/TourCarousel";
+import List from "@mui/material/List";
+import ListItem from "@mui/material/ListItem";
+import ListItemButton from "@mui/material/ListItemButton";
+import ListItemIcon from "@mui/material/ListItemIcon";
+import ListItemText from "@mui/material/ListItemText";
+import InboxIcon from "@mui/icons-material/Inbox";
+import ScrollAnimation from "react-animate-on-scroll";
 
 const SingleTour = ({ singleTourId }) => {
   const { id } = useParams();
@@ -50,7 +57,11 @@ const SingleTour = ({ singleTourId }) => {
   console.log(data);
 
   return (
-    <div className="singletourKotainer mt-20">
+    <div
+      animateIn="fadeIn"
+      duration={3}
+      className="singletourKotainer mt-20"
+    >
       {/* Page Content */}
       <div className="container">
         {/* Page Heading/Breadcrumbs */}
@@ -78,15 +89,23 @@ const SingleTour = ({ singleTourId }) => {
             </h3>
             <p className="text-justify">{data.description}</p>
             <h3 className="my-3 decoration-4 font-extrabold text-xl">Also</h3>
-            Package Level :{" "}
-            <span
-              class={
-                "inline-flex items-center rounded-md bg-red-50 px-2 py-1 text-xs font-medium text-red-700 ring-1 ring-inset" +
-                "ring-green-600/20"
-              }
-            >
-              {data.package_level.title}
-            </span>
+            <ul>
+              {" "}
+              <li>
+                Package Level :{" "}
+                <span
+                  class={
+                    "inline-flex items-center rounded-md bg-red-50 px-2 py-1 text-xs font-medium text-red-700 ring-1 ring-inset" +
+                    "ring-green-600/20"
+                  }
+                >
+                  {data.package_level.title}
+                </span>
+              </li>
+              <li>
+                {data.no_of_days} Days / {data.no_of_days - 1} Nights{" "}
+              </li>
+            </ul>
           </div>
         </div>
 
@@ -116,6 +135,25 @@ const SingleTour = ({ singleTourId }) => {
         <div className="tourKontent">
           <h1 className="decoration-4 font-extrabold text-3xl">Itenerary</h1>
           <BasicAccordion data={data.package_days} />
+          <div>
+            <span className="decoration-4 font-extrabold text-xl">
+              Package Inclusion
+            </span>
+            <List>
+              {data.package_inclusions.map((each) => {
+                return (
+                  <ListItem disablePadding>
+                    <ListItemButton>
+                      <ListItemIcon>
+                        <InboxIcon />
+                      </ListItemIcon>
+                      <ListItemText primary={each.tour_notes.title} />
+                    </ListItemButton>
+                  </ListItem>
+                );
+              })}
+            </List>
+          </div>
         </div>
 
         <div className="tourForm" style={{ position: "sticky", top: "30px" }}>

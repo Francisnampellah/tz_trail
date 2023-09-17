@@ -16,7 +16,7 @@ function Banner() {
             <h5 className="text-uppercase">
               Be the part of this Wonderful Journey
             </h5>
-            <h1>Incredible India!</h1>
+            <h1>Incredible Tanzania!</h1>
             <a href="#" className="primary-btn text-uppercase">
               Explore Now
             </a>

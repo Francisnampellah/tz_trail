@@ -8,6 +8,7 @@ import Example from "./Pages/OurTOur";
 import About from "./Pages/About";
 import { useState, useEffect } from "react";
 import Home from "./Home/Home";
+import SignInSide from "./Pages/Volunteer";
 
 import Header from "./Naviagtion/Header";
 
@@ -35,6 +36,7 @@ function App() {
             element={<Example setTourId={setSingleTourId} />}
           />
           <Route path="/about" element={<About />} />
+          <Route path="/volunteer" element={<SignInSide />} />
         </Routes>
       </BrowserRouter>
       <ChiniDown />
