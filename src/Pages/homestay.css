@@ -1,0 +1,52 @@
+.backgroundImage {
+    background-image: url("../Assets/hero.jpg");
+    background-size: cover;
+    bottom: 0px 0px 10px;
+    border-radius: 10px;
+    overflow: hidden;
+  
+  }
+  .service {
+    padding: 30px;
+  }
+  
+  .volunteer {
+    margin: 10px;
+    border-radius: 10px;
+  
+  }
+  
+  .Neno {
+    color: #683e12 !important;
+  }
+  
+  .Back {
+    background-color: #683e12 !important;
+    color: white !important;
+  }
+  
+  .Rangi {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  
+  .meetTeam {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 14px;
+  }
+  
+  .contactUs {
+    margin: 20px;
+    border-radius: 10px;
+    background-color: rgba(104, 62, 18, 0.5) !important;
+  }
+  
+  .NoerrorMessage {
+    display: none;
+  }
+  
+  .errorMessage {
+    color: red !important;
+  }
+  

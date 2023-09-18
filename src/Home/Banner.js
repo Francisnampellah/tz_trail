@@ -1,6 +1,6 @@
 import React from "react";
 import { animated } from "@react-spring/web";
-import ScrollAnimation from "react-animate-on-scroll";
+// import ScrollAnimation from "react-animate-on-scroll";
 
 function Banner() {
   return (
@@ -8,7 +8,7 @@ function Banner() {
       <div className="overlay overlay-bg darkKontainer"></div>
       <div className="container">
         <div className="row fullscreen d-flex align-items-center justify-content-center">
-          <ScrollAnimation
+          <div
             animateIn="slideInUp"
             duration={4}
             className="banner-content col-lg-10"
@@ -20,7 +20,7 @@ function Banner() {
             <a href="#" className="primary-btn text-uppercase">
               Explore Now
             </a>
-          </ScrollAnimation>
+          </div>
         </div>
       </div>
     </section>

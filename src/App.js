@@ -9,8 +9,8 @@ import About from "./Pages/About";
 import { useState, useEffect } from "react";
 import Home from "./Home/Home";
 import SignInSide from "./Pages/Volunteer";
-
 import Header from "./Naviagtion/Header";
+import Homestay from "./Pages/Homestay";
 
 function App() {
   const [singleTourId, setSingleTourId] = useState();
@@ -37,6 +37,7 @@ function App() {
           />
           <Route path="/about" element={<About />} />
           <Route path="/volunteer" element={<SignInSide />} />
+          <Route path="/homestay" element={<Homestay />} />
         </Routes>
       </BrowserRouter>
       <ChiniDown />

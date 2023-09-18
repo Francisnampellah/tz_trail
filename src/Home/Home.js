@@ -3,7 +3,6 @@ import Portfolio from "../ViewAll/FearuredTour";
 import ServiceArea from "../component/ServicesSection";
 import CarouselComponent from "../ViewAll/Carousel";
 import ReviewSection from "../component/ReviewSection";
-import ScrollAnimation from "react-animate-on-scroll";
 
 import React from "react";
 
@@ -15,10 +14,10 @@ export default function Home() {
       <ServiceArea />
       <CarouselComponent />
       <div className="inBetween">
-        <ScrollAnimation animateIn="slideInLeft" duration={2}>
+        <div animateIn="slideInLeft" duration={2}>
           <h1 style={{ fontSize: 72, color: "white" }}>Hello word</h1>
-        </ScrollAnimation>
-        <ScrollAnimation animateIn="slideInRight" duration={2}>
+        </div>
+        <div animateIn="slideInRight" duration={2}>
           <p style={{ fontSize: 16, color: "white", textAlign: "justify" }}>
             In the above code, the initial prop defines the behavior of a motion
             component before it mounts, while the animate prop is used to define
@@ -28,7 +27,7 @@ export default function Home() {
             transition property has a duration value that indicates the
             animation duration.{" "}
           </p>
-        </ScrollAnimation>
+        </div>
       </div>
       <ReviewSection />
     </div>

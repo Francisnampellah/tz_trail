@@ -1,11 +1,11 @@
 import React from "react";
 import "./homestay.css";
 // import TrustedCat from "../components";
-import ScrollAnimation from "react-animate-on-scroll";
+// import ScrollAnimation from "react-animate-on-scroll";
 
 const AboutUs = () => {
   return (
-    <ScrollAnimation
+    <div
       animateIn="fadeIn"
       duration={3}
       className="bg-gray-200 mt-20"
@@ -97,7 +97,7 @@ const AboutUs = () => {
           &copy; 2022 Phind. All rights reserved.
         </p>
       </footer> */}
-    </ScrollAnimation>
+    </div>
   );
 };
 

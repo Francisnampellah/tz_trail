@@ -36,6 +36,9 @@ const Header = () => {
               <li>
                 <a href="/volunteer">Volunteer</a>
               </li>
+              <li>
+                <a href="/homestay">HomeStay</a>
+              </li>
               {/* <li>
                 <a href="#service">Services</a>
               </li>

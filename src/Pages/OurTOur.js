@@ -13,7 +13,7 @@ import ClipLoader from "react-spinners/ClipLoader";
 import GetRequest from "../DataProcessing/GetRequest.js";
 import TourFilterElement from "./TourFilterElement.js";
 import { GetFilter } from "../DataProcessing/GetRequest";
-import ScrollAnimation from "react-animate-on-scroll";
+// import ScrollAnimation from "react-animate-on-scroll";
 
 import { sortOptions } from "../DataProcessing/Filters.js";
 
@@ -95,7 +95,7 @@ export default function Example({ setTourId }) {
   }
 
   return (
-    <ScrollAnimation
+    <div
       animateIn="fadeIn"
       duration={3}
       className="bg-white"
@@ -451,6 +451,6 @@ export default function Example({ setTourId }) {
           </section>
         </main>
       </div>
-    </ScrollAnimation>
+    </div>
   );
 }
