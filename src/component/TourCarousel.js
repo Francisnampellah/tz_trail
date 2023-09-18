@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import Carousel from "react-bootstrap/Carousel";
-import ScrollAnimation from "react-animate-on-scroll";
+// import ScrollAnimation from "react-animate-on-scroll";
 import Swal from "sweetalert2";
 const TourCarousel = ({ data }) => {
   const windowSize = useRef([window.innerWidth, window.innerHeight]);

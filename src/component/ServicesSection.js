@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import ScrollAnimation from "react-animate-on-scroll";
+// import div from "react-animate-on-scroll";
 
 function ServiceArea() {
   const handleScroll = ({ scrollTop, direction }) => {
@@ -38,7 +38,7 @@ function ServiceArea() {
   return (
     <>
       {/* Start service Area */}
-      <ScrollAnimation
+      <div
         animateIn={scrollDirection ? "slideInDown" : "slideInUp"}
         duration={1}
         className="ServiceKontainer"
@@ -99,7 +99,7 @@ function ServiceArea() {
             </div>
           </div>
         </section>
-      </ScrollAnimation>
+      </div>
 
       {/* End services Area */}
     </>
