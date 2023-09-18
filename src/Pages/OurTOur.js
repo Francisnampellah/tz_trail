@@ -98,7 +98,7 @@ export default function Example({ setTourId }) {
     <motion.div
     initial={{ opacity: 0 }}
     animate={{ opacity: 1 }}
-    transition={{ duration: 3 }}
+    transition={{ duration: 2 }}
     className="bg-gray-200 mt-20"
       style={{ minHeight: "80vh", margin: "20px", borderRadius: "10px" }}
     >

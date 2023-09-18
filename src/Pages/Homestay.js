@@ -10,7 +10,7 @@ export default function Homestay() {
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      transition={{ duration: 3 }}
+      transition={{ duration: 2 }}
     >
       <div className="service" id="myDiv">
         <div className="text-gray-900 pt-12 pr-0 pb-14 pl-0 bg-white">
