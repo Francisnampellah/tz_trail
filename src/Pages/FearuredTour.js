@@ -1,6 +1,4 @@
 import React, { useState, useEffect } from "react";
-// import div from "react-animate-on-scroll";
-// import ScrollObserver from "react-scroll-observer";
 
 function Portfolio() {
   const handleScroll = ({ scrollTop, direction }) => {

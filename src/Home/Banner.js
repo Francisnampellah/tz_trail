@@ -1,6 +1,5 @@
 import React from "react";
-import { animated } from "@react-spring/web";
-// import ScrollAnimation from "react-animate-on-scroll";
+import { motion } from "framer-motion";
 
 function Banner() {
   return (
@@ -8,9 +7,10 @@ function Banner() {
       <div className="overlay overlay-bg darkKontainer"></div>
       <div className="container">
         <div className="row fullscreen d-flex align-items-center justify-content-center">
-          <div
-            animateIn="slideInUp"
-            duration={4}
+          <motion.div
+            initial={{ opacity: 0, y: 100 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{duration:4}}
             className="banner-content col-lg-10"
           >
             <h5 className="text-uppercase">
@@ -20,7 +20,7 @@ function Banner() {
             <a href="#" className="primary-btn text-uppercase">
               Explore Now
             </a>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

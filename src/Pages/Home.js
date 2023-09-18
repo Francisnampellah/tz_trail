@@ -1,8 +1,8 @@
-import Banner from "./Banner";
-import Portfolio from "../ViewAll/FearuredTour";
-import ServiceArea from "../component/ServicesSection";
-import CarouselComponent from "../ViewAll/Carousel";
+import Banner from "../Home/Banner"; 
 import ReviewSection from "../component/ReviewSection";
+import Portfolio from "./FearuredTour";
+import ServiceArea from "../Home/ServicesSection";
+import CarouselComponent from "../component/Carousel";
 
 import React from "react";
 

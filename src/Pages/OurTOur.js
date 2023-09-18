@@ -13,9 +13,9 @@ import ClipLoader from "react-spinners/ClipLoader";
 import GetRequest from "../DataProcessing/GetRequest.js";
 import TourFilterElement from "./TourFilterElement.js";
 import { GetFilter } from "../DataProcessing/GetRequest";
-// import ScrollAnimation from "react-animate-on-scroll";
-
 import { sortOptions } from "../DataProcessing/Filters.js";
+import { motion } from "framer-motion";
+
 
 const Title = ["Tour Levels", "Tour Focus", "Tour Activities"];
 const items = Array.from({ length: 50 }, (_, i) => `Item ${i + 1}`);
@@ -95,10 +95,11 @@ export default function Example({ setTourId }) {
   }
 
   return (
-    <div
-      animateIn="fadeIn"
-      duration={3}
-      className="bg-white"
+    <motion.div
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    transition={{ duration: 3 }}
+    className="bg-gray-200 mt-20"
       style={{ minHeight: "80vh", margin: "20px", borderRadius: "10px" }}
     >
       <div>
@@ -451,6 +452,6 @@ export default function Example({ setTourId }) {
           </section>
         </main>
       </div>
-    </div>
+    </motion.div>
   );
 }

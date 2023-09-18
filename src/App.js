@@ -7,10 +7,10 @@ import SingleTour from "./Home/SingleTour";
 import Example from "./Pages/OurTOur";
 import About from "./Pages/About";
 import { useState, useEffect } from "react";
-import Home from "./Home/Home";
 import SignInSide from "./Pages/Volunteer";
 import Header from "./Naviagtion/Header";
 import Homestay from "./Pages/Homestay";
+import Home from "./Pages/Home";
 
 function App() {
   const [singleTourId, setSingleTourId] = useState();

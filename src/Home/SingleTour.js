@@ -11,7 +11,7 @@ import ListItemButton from "@mui/material/ListItemButton";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import InboxIcon from "@mui/icons-material/Inbox";
-// import ScrollAnimation from "react-animate-on-scroll";
+import { motion } from "framer-motion";
 
 const SingleTour = ({ singleTourId }) => {
   const { id } = useParams();
@@ -57,9 +57,10 @@ const SingleTour = ({ singleTourId }) => {
   console.log(data);
 
   return (
-    <div
-      animateIn="fadeIn"
-      duration={3}
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 3 }}
       className="singletourKotainer mt-20"
     >
       {/* Page Content */}
@@ -160,7 +161,7 @@ const SingleTour = ({ singleTourId }) => {
           <BookingForm data={data} />
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

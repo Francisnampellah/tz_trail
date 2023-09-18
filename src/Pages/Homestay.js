@@ -1,13 +1,17 @@
 import React, { useState } from "react";
 import "./homestay.css";
 import Hero from "../Assets/hero.jpg";
-// import ScrollAnimation from "react-animate-on-scroll";
+import { motion } from "framer-motion";
 
 export default function Homestay() {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <div animateIn="fadeIn" duration={3}>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 3 }}
+    >
       <div className="service" id="myDiv">
         <div className="text-gray-900 pt-12 pr-0 pb-14 pl-0 bg-white">
           <div className="w-full pt-4 pr-5 pb-6 pl-5 mt-0 mr-auto mb-0 ml-auto space-y-5 sm:py-8 md:py-12 sm:space-y-8 md:space-y-16 max-w-7xl">
@@ -300,7 +304,7 @@ export default function Homestay() {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

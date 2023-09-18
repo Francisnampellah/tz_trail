@@ -1,13 +1,14 @@
 import React from "react";
 import "./homestay.css";
-// import TrustedCat from "../components";
-// import ScrollAnimation from "react-animate-on-scroll";
+import { motion } from "framer-motion";
+
 
 const AboutUs = () => {
   return (
-    <div
-      animateIn="fadeIn"
-      duration={3}
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 3 }}
       className="bg-gray-200 mt-20"
     >
       <header className="py-8 px-4 bg-white">
@@ -97,7 +98,7 @@ const AboutUs = () => {
           &copy; 2022 Phind. All rights reserved.
         </p>
       </footer> */}
-    </div>
+    </motion.div>
   );
 };
 
