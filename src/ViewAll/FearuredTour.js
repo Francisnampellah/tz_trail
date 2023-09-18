@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-// import ScrollAnimation from "react-animate-on-scroll";
-import ScrollObserver from "react-scroll-observer";
+// import div from "react-animate-on-scroll";
+// import ScrollObserver from "react-scroll-observer";
 
 function Portfolio() {
   const handleScroll = ({ scrollTop, direction }) => {
@@ -48,7 +48,9 @@ function Portfolio() {
         <div className="row d-flex justify-content-center">
           <div className="menu-content col-lg-10">
             <div className="title text-center">
-              <h1 className="mb-10 text-3xl font-medium leading-tight p-inner">Destination</h1>
+              <h1 className="mb-10 text-3xl font-medium leading-tight p-inner">
+                Destination
+              </h1>
               <p>Explore Tanzania from Arusha to Serengeti</p>
             </div>
           </div>
@@ -65,7 +67,7 @@ function Portfolio() {
         </div> */}
 
         <div className="filters-content">
-          <ScrollAnimation
+          <div
             animateIn={scrollDirection ? "slideInDown" : "slideInUp"}
             duration={1}
             className="flex flex-wrap"
@@ -103,7 +105,7 @@ function Portfolio() {
                 </div>
               </div>
             </div>
-          </ScrollAnimation>
+          </div>
 
           {/* <div className="single-portfolio col-sm-4 all portal">
               <div className="item">
