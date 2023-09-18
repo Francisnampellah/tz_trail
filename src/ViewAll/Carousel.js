@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import Carousel from "react-bootstrap/Carousel";
 import Card from "react-bootstrap/Card";
-import ScrollAnimation from "react-animate-on-scroll";
+// import div from "react-animate-on-scroll";
 import KardComponent from "../component/KardComponent";
 
 const CarouselComponent = () => {
@@ -26,7 +26,7 @@ const CarouselComponent = () => {
 
   const ArryData = [1, 2, 3];
   return (
-    <ScrollAnimation
+    <div
       animateIn={"fadeIn"}
       duration={3}
       className=""
@@ -65,7 +65,7 @@ const CarouselComponent = () => {
           <span>View All</span>
         </div>
       </div>
-    </ScrollAnimation>
+    </div>
   );
 };
 

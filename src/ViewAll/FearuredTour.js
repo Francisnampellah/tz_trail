@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import ScrollAnimation from "react-animate-on-scroll";
+// import ScrollAnimation from "react-animate-on-scroll";
 import ScrollObserver from "react-scroll-observer";
 
 function Portfolio() {
